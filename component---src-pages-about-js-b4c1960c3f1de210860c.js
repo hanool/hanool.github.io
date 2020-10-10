@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"3XHS":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),o=n("Wbzz"),c=n("Bl7J"),i=n("vrFN");t.default=function(){return l.a.createElement(c.a,null,l.a.createElement(i.a,{title:"About Page"}),l.a.createElement("h1",null,"About this Blog"),l.a.createElement("p",null,"This is Dev-logging Blog of YIM"),l.a.createElement(o.Link,{to:"/"},"Go back to the homepage"))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-b4c1960c3f1de210860c.js.map
