@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -78,11 +87,27 @@ body {
   display: inline-block;
   top: 0;
   right: 0;
-  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 0% 0);
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
   width: 2em;
   height: 2em;
   background-color: #d2e9e3;
-  border-radius: 0em 0em 0em 1em;
+  border-radius: 1em 0em 0em 0em;
+  transform: rotate(-90deg);
+}
+
+.flipped {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  width: 80%;
+  height: 100%;
+  right: -5px;
+  border-radius: 1em 0em 0em 1em;
+  transform: rotate(0deg);
+  border-right: 7em solid #2c3532;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.5em;
 }
 
 .project-card-link,
@@ -90,5 +115,11 @@ body {
   display: none;
 }
 
-.project-card-title {
+.flipped .project-card-link,
+.flipped .project-card-demo {
+  display: block;
+  font-size: 0.7em;
+  padding: 0.3em 0.5em;
+  background-color: #f76d6d;
+  border-bottom: 2px solid black;
 }
