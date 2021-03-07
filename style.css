@@ -8,9 +8,14 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #2c3532;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+  max-width: 45em;
 }
 
 .profile {
@@ -21,7 +26,7 @@ body {
   padding: 1em;
 }
 
-.profile .profile-img {
+.profile-img {
   background-color: #d2e9e3;
   width: 10em;
   height: 10em;
@@ -29,18 +34,15 @@ body {
   margin: 1em;
 }
 
-.profile .profile-title {
+.profile-title {
   color: #2f7878;
 }
 
-.profile .profile-description {
+.profile-description {
   color: #d2e9e3;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.project {
 }
 
 .project-card {
@@ -54,7 +56,39 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
 }
 
-.project-card .project-title {
+.project-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 2em solid #2c3532;
+  border-left: 2em solid #ffcb9b;
+  width: 0;
+}
+
+.project-card-icon {
+  display: inline-block;
+}
+
+.project-card-back {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 0% 0);
+  width: 2em;
+  height: 2em;
+  background-color: #d2e9e3;
+  border-radius: 0em 0em 0em 1em;
+}
+
+.project-card-link,
+.project-card-demo {
+  display: none;
+}
+
+.project-card-title {
 }
