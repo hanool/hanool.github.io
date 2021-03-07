@@ -1,4 +1,4 @@
 - [Introduction](/)
-- [Reading 1 Static Checking](/kr/Reading_1_Static_Checking/Reading_1_Static_Checking.md)
-- [Reading 2 Basic Java](/kr/Reading_2_Basic_Java/Reading_2_Basic_Java.md)
-- [Reading 3 Testing](/kr/Reading_3_Testing/Reading_3_Testing.md)
+- [Reading 1 Static Checking](kr/Reading_1_Static_Checking/Reading_1_Static_Checking.md)
+- [Reading 2 Basic Java](kr/Reading_2_Basic_Java/Reading_2_Basic_Java.md)
+- [Reading 3 Testing](kr/Reading_3_Testing/Reading_3_Testing.md)
